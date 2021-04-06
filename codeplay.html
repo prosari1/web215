@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="En">
+  <head>
+    <!-- Script to include html header and footer dinamically  -->
+    
+    <script src="scripts/include.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/Grid.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <title>WEB 215 | Code Play</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/coffee-logo.png">
+
+  </head>
+<body>
+  <div data-include-html="header.html"></div>
+  
+  <main class="row content">
+  <h1>M3B - Code Play</h1>
+
+  <ol class="code-play">
+    <li>
+      <code class="input">var score1 = 90;
+        <br>var score2 = 100;
+        <br>var highScore1 = 73;
+        <br>var highScore2 = 100;
+        <br>var comparison = (score1 + score2) &gt; (highScore1 + highScore2);
+        <br>console.log("The new highest score is: " + comparison);
+      </code><br><span>&#8658;</span>
+      <code class="output">The new highest score is: true</code>
+    </li>
+    <li>
+      <code class="input">var score1 = 90;
+        <br>var score2 = 100;
+        <br>var highScore1 = 73;
+        <br>var highScore2 = 100;
+        <br>var comparison = (score1 + score2) &lt; (highScore1 + highScore2);
+        <br>console.log("The new highest score is: " + comparison);
+      </code><br><span>&#8658;</span>
+      <code class="output">The new highest score is: false </code>
+    </li>
+    <li>
+      <code class="input">var score1 = 90;
+        <br>var score2 = 100;
+        <br>var highScore1 = 73;
+        <br>var highScore2 = 100;
+        <br>var comparison = (score1 + score2) &ge; (highScore1 + highScore2);
+        <br>console.log("The new highest score is: " + comparison);
+      </code><br><span>&#8658;</span>
+      <code class="output">The new highest score is: false </code>
+    </li>
+    <li>
+      <code class="input">var score1 = 90;
+        <br>var score2 = 100;
+        
+        <br>if (score1 && score2 &ge; 80) {
+          <br>console.log("Both scores are greater than 80");
+        <br>}
+      </code><br><span>&#8658;</span>
+      <code class="output">Both scores are greater than 80 </code>
+    </li>
+    <li>
+      <code class="input">var score1 = 90;
+        <br>var score2 = 100;
+        <br>var score3 = 150;
+        <br>if (score1 && score2 &le; 80) {
+          <br>console.log("Both scores are greater than 80");
+        <br>} 
+        <br>else if (score1 + score2 &ge score3){
+          <br>console.log("The sum of score1 and score2 are greater than score3.")
+        <br>}
+      </code><br><span>&#8658;</span>
+      <code class="output">The sum of score1 and score2 are greater than score3.</code>
+    </li>
+    <li>
+      <code class="input">var score1 = 100;
+        <br>var msg;
+        <br>if (score1 &ge; 50) {
+          <br>msg = 'Sorry, We don't have change for $100. ';
+          <br>msg += 'No coffee for you today.'
+        <br>} 
+        <br>console.log(msg);
+      </code><br><span>&#8658;</span>
+      <code class="output">Sorry, We don't have change for $100. No coffee for you today.</code>
+    </li>
+    <li>
+      <code class="input">var score1 = 100;
+        <br>var msg;
+        <br>if (score1 &ge; 50) {
+          <br>msg = 'Sorry, We don't have change for $100. Coffee is free for you today.';
+        <br>} else {
+          <br>msg = 'Thanks for your order, your total is $' + score1;
+        <br>}
+        <br>console.log(msg);
+      </code><br><span>&#8658;</span>
+      <code class="output">Sorry, We don't have change for $100. Coffee is free for you today.</code>
+    </li>
+    <li>
+      <code class="input">var score1 = 10;
+        <br>var msg;
+        <br>if (score1 &ge; 50) {
+          <br>msg = 'Sorry, We don't have change for $100. Coffee is free for you today.';
+        <br>} else {
+          <br>msg = 'Thanks for your order!';
+        <br>}
+        <br>console.log(msg);
+      </code><br><span>&#8658;</span>
+      <code class="output">Thanks for your order!</code>
+    </li>
+    <li>
+      <code class="input">var score = 10;
+        <br>var msg;
+        <br>switch (score) {
+          <br>case 10:
+          <br>msg = "Your total order is $10";
+          <br>break;
+
+          <br>case 20:
+          <br>msg = "Your total order is $20";
+          <br>break;
+
+          <br>default:
+          <br>msg = "Congrats! You don't have to pay today!";
+          <br>break;
+        <br>}
+        <br>console.log(msg);
+          
+      </code><br><span>&#8658;</span>
+      <code class="output">Your total order is $10</code>
+    </li>
+    </ol>
+
+</main>
+<div data-include-html="footer.html"></div>
+<script>
+  includeHTML();
+</script> 
+</body>
+</html>
