@@ -150,6 +150,8 @@ code {
   background-color: #6e6e6d;
   border: 2px solid #E67E22; 
   padding: 5px;
+  list-style-position: inside;
+  color: #E67E22;
 }
 
 .input {
@@ -164,3 +166,12 @@ span {
   color: #88D498;
   font-size: 30px;
 }
+
+/* TOC Styling */
+
+.toc-style {
+  line-height: 38px;
+  list-style-type: circle;  
+  list-style-position: inside;
+}
+
