@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+  <!-- Script to include html header and footer dinamically  -->
+    
+  <script src="scripts/include.js"></script>
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles/Grid.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <title>WEB 215 | Template</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="images/coffee-logo.png">
+
+</head>
+<body>
+  <div data-include-html="header.html"></div>
+<main>
+  <h1>Table Of Contents</h1>
+    <h2>Index:</h2>
+    <ol class="toc-style">
+        <li><a href="contract.html">Contract</a></li>
+        <li><a href="introduction.html">Introduction</a></li>
+        <li><a href="https://prosari1.github.io/web115/">M16A - Port Course Folder to GitHub Pages</a></li>
+    </ol>
+</main>
+  <div data-include-html="footer.html"></div>
+    <script>
+      includeHTML();
+    </script>  
+</body>
+</html>
