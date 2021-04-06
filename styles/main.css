@@ -1,0 +1,166 @@
+/* 
+
+background: rgb(34,193,195);
+background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(37,193,193,1) 9%, rgba(253,187,45,1) 100%);
+
+Grey font color: rgb(71, 71, 71);
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, 
+body {
+  background: rgb(34,193,195);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #242424;
+}
+
+/* Components reusable  */
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.content {
+  margin-top: 5px;
+  padding: 15px 25px;
+  box-shadow: inset 0 0 2000px rgb(255, 255, 255, 0.5); /* Color for the box - glass effect */
+  backdrop-filter: blur(50px); /* part of glass effect*/
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 10px;
+}
+
+
+/* HEADINGS & Paragraphs  */
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  line-height: 33px;
+}
+
+.content ul {
+  line-height: 33px;
+}
+
+.logo-name {
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 400;
+  font-size: 30px;
+  float: left;
+  margin-top: 60px;
+  margin-left: 7px;
+}
+
+/* Main Navigation */
+
+nav {
+  text-align: center;
+}
+
+.main-nav {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+/* Links */
+a:link,
+a:visited {
+  color: #50514F;
+  text-decoration: none;
+  padding-bottom: 1px;
+  /* create smooth transition on mouse hovering */
+  transition: background-color 0.5s, border-bottom 0.5s;
+}
+
+a:hover,
+a:active {
+  color: #50514F;
+  background-color: rgb(230, 126, 34, 0.3);
+  border-bottom: 2px solid rgb(230, 126, 34);
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.content a:link {
+  border-bottom: 2px solid #50514F;
+  background-color: rgba(243, 153, 74, 0.342);
+  padding: 2px;
+  transition: background-color 0.5s, border-bottom 0.5s;
+}
+
+.content a:hover {
+  border-bottom: 2px solid rgb(230, 126, 34);
+}
+
+/* Buttons */
+
+
+
+/* FOOTER */
+
+footer {  
+  text-align: center;
+  padding: 30px 0 30px 0;
+  word-spacing: 3px;
+  box-shadow: inset 0 0 2000px rgb(255, 255, 255, 0.5); /* Color for the box - glass effect */
+  backdrop-filter: blur(50px); /* part of glass effect*/
+}
+
+footer p a {
+  text-align: center;
+  padding-bottom: 5px;
+  border-radius: 3px;
+}
+
+/* CODE PLAY STYLING */
+code {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.code-play li{
+  background-color: #6e6e6d;
+  border: 2px solid #E67E22; 
+  padding: 5px;
+}
+
+.input {
+  color: #E7E7E7;
+}
+
+.output {
+  color: #EFA00B;
+}
+
+span {
+  color: #88D498;
+  font-size: 30px;
+}
