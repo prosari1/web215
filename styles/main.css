@@ -172,3 +172,35 @@ span {
   list-style-position: inside;
 }
 
+/* CSS Sprites */
+.coffee-menu li{
+  list-style: none;
+  margin: 20px 0;
+}
+
+.coffee-menu li a{
+  background: url(../images/coffee-sprites.png) no-repeat;
+  display: block;
+  /* padding: 25px 10px 25px 100px; */
+}
+
+.coffee-menu li a.first{
+  background-position: -417px -5px;
+  width: 148px;
+	height: 147px;
+}
+.coffee-menu li a.second{
+  background-position: -387px -256px;
+  width: 182px;
+	height: 111px;
+}
+.coffee-menu li a.third{
+  background-position: -159px -479px;
+  width: 169px;
+	height: 76px;
+}
+.coffee-menu li a.fourth{
+  background-position: -131px -39px;
+  width: 49px;
+	height: 49px;
+}
