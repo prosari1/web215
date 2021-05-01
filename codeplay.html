@@ -132,7 +132,334 @@
       </code><br><span>&#8658;</span>
       <code class="output">Your total order is $10</code>
     </li>
-    </ol>
+    <li>
+      <code class="input">var score = 0;
+        <br>console.log(msg);
+      </code><br><span>&#8658;</span>
+      <code class="output">Congrats! You don't have to pay today!</code>
+    </li>
+    <li>
+      <code class="input">var score = 10;
+        <br>for (i = 0; i &lt; 5; ++i) <br>{<br>
+          console.log(i);<br>}
+      </code><br><span>&#8658;</span>
+      <code class="output">1 <br>2<br>3<br>4</code>
+    </li>
+    <li>
+      <code class="input">var score = 10;
+        <br>for (i = 10; i &gt; 6; score--) <br>{<br>
+          console.log(i);<br>}
+      </code><br><span>&#8658;</span>
+      <code class="output">10<br>9<br>8<br>7</code>
+    </li>
+    <li>
+      <code class="input">for (i = 0; i &lt; 5; i++) {
+      <br>text += "Order: " + i;
+      <br>};
+      </code><br><span>&#8658;</span>
+      <code class="output">Order: 0
+        <br>Order: 1
+        <br>Order: 2
+        <br>Order: 3
+        <br>Order: 4
+      </code>
+    </li>
+    <li>
+      <code class="input">var myNum = 100;
+        <br>while (myNum > 5) {
+        <br>console.log(myNum);
+        <br>myNum--;
+        <br>}</code><br><span>&#8658;</span>
+      <code class="output">100<br>99<br>98<br>97<br>96</code>
+    </li>
+    <li>
+      <code class="input">var myNum = 0;
+        <br>while (myNum &lt; 4) {
+        <br>console.log(myNum);
+        <br>myNum++;
+        <br>}
+      </code><br><span>&#8658;</span>
+      <code class="output">0<br>1<br>2<br>3</code>
+    </li>
+    <li>
+      <code class="input">myNum = 0;
+        <br>numIncrement = 0;
+        <br>do {
+        <br>myNum += numIncrement;
+        <br>console.log(myNum)
+        <br>numIncrement++;
+        <br>} while (numIncrement &lt; 5);
+      </code><br><span>&#8658;</span>
+      <code class="output">0<br>1<br>3<br>6<br>10</code>
+    </li>
+    <li>
+      <code class="input">for (var i = 0; i &lt; 10; i += 2) {
+        <br>console.log(i); 
+        <br>} 
+      </code><br><span>&#8658;</span>
+      <code class="output">0<br>2<br>4<br>6<br>8</code>
+    </li>
+    <li>
+      <code class="input">for (var i = 10; i &gt; 1; i -= 2) {
+        <br>console.log(i); 
+        <br>} 
+      </code><br><span>&#8658;</span>
+      <code class="output">10<br>8<br>6<br>4<br>2</code>
+    </li>
+    <li>
+      <code class="input">var age = 18;
+        <br>function underAge(age) {
+        <br>if(age &lt; 21)
+        <br>{
+        <br>msg = "You're under age.";
+        <br>} <br>else <br>{
+        <br>msg = "You're not under age.";
+        <br>}
+        <br>} 
+      </code><br><span>&#8658;</span>
+      <code class="output">You're under age.</code>
+    </li>
+    <li>
+      <code class="input">var age = 30;
+        <br>function underAge(age) {
+        <br>if(age &lt; 21)
+        <br>{
+        <br>msg = "You're under age.";
+        <br>} <br>else <br>{
+        <br>msg = "You're not under age.";
+        <br>}
+        <br>} 
+      </code><br><span>&#8658;</span>
+      <code class="output">You're not under age.</code>
+    </li>
+    <li>
+      <code class="input">var fahrenheit = 100;
+        <br>function temperature(fahrenheit) {
+        <br>return (5/9) * (fahrenheit-32);
+        <br>} 
+      </code><br><span>&#8658;</span>
+      <code class="output">37.7777778</code>
+    </li>
+    <li>
+      <code class="input">function temperature(fahrenheit) {
+        <br>return (5/9) * (fahrenheit-32);
+        <br>} 
+        <br>temperature(120);
+      </code><br><span>&#8658;</span>
+      <code class="output">48.8889</code>
+    </li>
+    <li>
+      <code class="input">var miles = 100;
+        <br>function milesToKm(miles) {
+        <br>return miles * 1.609;
+        <br>} 
+      </code><br><span>&#8658;</span>
+      <code class="output">160.934</code>
+    </li>
+    <li>
+      <code class="input">var myArray = [85,24,35];
+        <br>myArray[1] = 79; 
+      </code><br><span>&#8658;</span>
+      <code class="output">[85,79,35]</code>
+    </li>
+    <li>
+      <code class="input">var myArrayList = [ ["a","b","c"], [3,4,5], ["g","h","i"], [[9,10,11],12, 13]];
+        <br>var myData = myArrayList[0][0];
+      </code><br><span>&#8658;</span>
+      <code class="output">a</code>
+    </li>
+    <li>
+      <code class="input">myArrayList.push(["e","f","g"]);
+      <br>console.log(myArrayList);
+      </code><br><span>&#8658;</span>
+      <code class="output">[ ["a","b","c"], [3,4,5], ["g","h","i"], [[9,10,11],12, 13], ["e","f","g"]]</code>
+    </li>
+    <li>
+      <code class="input">var coffeeStyle = ['Black coffee', 'Decaf', 'Coffee with cream'];
+      <br>for (var i = 0; i &lt; coffeeStyle.length; i++) {
+      <br>console.log('We serve ' + coffeeStyle[i]);
+      <br>}</code><br><span>&#8658;</span>
+      <code class="output">We serve Black coffee
+        <br>We serve Decaf
+        <br>We serve Coffee with cream
+      </code>
+    <li>
+        <code class="input">var coffeeStyle = ['Black coffee', 'Decaf', 'Coffee with cream'];
+        <br>console.log(coffeeStyle.length());
+        <br>}</code><br><span>&#8658;</span>
+        <code class="output">3
+        </code>
+    </li>
+    <li>
+      <code class="input">var coffeeStyle = ['Black coffee', 'Decaf', 'Coffee with cream'];
+      <br>coffeeStyle.pop();
+      <br>}</code><br><span>&#8658;</span>
+      <code class="output">Black coffee, Decaf
+      </code>
+    </li>
+    <li>
+      <code class="input">var coffeeStyle = ['Black coffee', 'Decaf', 'Coffee with cream'];
+      <br>coffeeStyle.pop(0);
+      <br>}</code><br><span>&#8658;</span>
+      <code class="output">Decaf, Coffee with cream
+      </code>
+    </li>
+    <li>
+      <code class="input">var coffeeStyle = ['Black coffee', 'Decaf', 'Coffee with cream'];
+      <br>coffeeStyle[1] = Tea;
+      <br>}</code><br><span>&#8658;</span>
+      <code class="output">Black coffee, Tea, Coffee with cream
+      </code>
+    </li>
+    <li>
+      <code class="input">var coffeeStyle = ['Black coffee', 'Decaf', 'Coffee with cream'];
+        <br>const removed = itemRemoved.pop();
+        <br>console.log(coffeeStyle); 
+        <br>console.log(removed);        
+      </code><br><span>&#8658;</span>
+      <code class="output">Black coffee, Decaf
+        <br>Coffee with cream
+      </code>
+    </li>
+    <li>
+      <code class="input">var myName = "Patricia";
+        <br>var myNameLength = myName.length;
+      </code><br><span>&#8658;</span>
+      <code class="output">8</code>
+    </li>
+    <li>
+      <code class="input">var msgCoffee = "I love coffee!!!";
+      <br>var message = msgCoffee.length;
+      <br>}</code><br><span>&#8658;</span>
+      <code class="output">16
+      </code>
+    </li>
+    <li>
+      <code class="input">var msgCoffee = "I love coffee!!!";
+      <br>var message = msgCoffee.length;
+      <br>console.log("My string have " + msgCoffee.length + "characters.")
+      <br>}</code><br><span>&#8658;</span>
+      <code class="output">My string have 16 characters.
+      </code>
+    </li>
+    <li>
+      <code class="input">var coffeeStyle = ['Black coffee', 'Decaf', 'Coffee with cream'];
+      <br>console.log(coffeeStyle.shift());
+      <br>}</code><br><span>&#8658;</span>
+      <code class="output">Decaf, Coffee with cream
+      </code>
+    </li>
+    <li>
+      <code class="input">var coffeeStyle = ['Black coffee', 'Decaf', 'Coffee with cream'];
+      <br>console.log(coffeeStyle.unshift("Water"));
+      <br>}</code><br><span>&#8658;</span>
+      <code class="output">Water, Black coffee, Decaf, Coffee with cream
+      </code>
+    </li>
+    <li>
+      <code class="input">var coffeeStyle = ['Black coffee', 'Decaf', 'Coffee with cream'];
+        <br>console.log(coffeeStyle[1] = "water");
+        <br>}</code><br><span>&#8658;</span>
+      <code class="output">Black coffee, water, Coffee with cream
+      </code>
+    </li>
+    <li>
+      <code class="input">var coffeeStyle = ['Black coffee', 'Decaf', 'Coffee with cream'];
+        <br>var juices = ["orange, lemonade"];
+        <br>var drinkingOptions = coffeeStyle.concat(juices);
+      
+        <br>}</code><br><span>&#8658;</span>
+      <code class="output">Black coffee, Decaf, Coffee with cream, orange, lemonade
+      </code>
+    </li>
+    <li>
+      <code class="input">var coffeeStyle = ['Black coffee', 'Decaf', 'Coffee with cream'];
+        <br>coffeeStyle.sort();
+        <br>}</code><br><span>&#8658;</span>
+      <code class="output">Black coffee, Coffee with cream, Decaf
+      </code>
+    </li>
+    <li>
+      <code class="input">var coffeeStyle = ['Black coffee', 'Decaf', 'Coffee with cream'];
+        <br>msg = "";
+        <br>for (var i = 0; i &lt; coffeeStyle.length; i++)<br>{
+        <br>msg += coffeeStyle[i] + "&lt;br&gt;";<br>}
+        </code><br><span>&#8658;</span>
+      <code class="output">Black coffee<br>Decaf<br>Coffee with cream
+      </code>
+    </li>
+    <li>
+      <code class="input">var phrase = "Be the change that you wish to see in the world.";
+        <br>phrase.chartAt(5);
+        </code><br><span>&#8658;</span>
+      <code class="output">e
+      </code>
+    </li>
+    <li>
+      <code class="input">var phrase = "Be the change that you wish to see in the world.";
+        <br>phrase.includes("wish")
+        </code><br><span>&#8658;</span>
+      <code class="output">True
+      </code>
+    </li>
+    <li>
+      <code class="input">var phrase = "Be the change that you wish to see in the world.";
+        <br>phrase.includes("we")
+        </code><br><span>&#8658;</span>
+      <code class="output">False
+      </code>
+    </li>
+    <li>
+      <code class="input">var phrase = "Be the change that you wish to see in the world.";
+        <br>phrase.lastIndexOf("c");
+        </code><br><span>&#8658;</span>
+      <code class="output">7
+      </code>
+    </li>
+    <li>
+      <code class="input">const sum = (numOne, numTwo) => { 
+        <br>return numOne + numTwo; 
+        <br>}; 
+        <br>console.log(sum(10,20)); 
+      </code><br><span>&#8658;</span>
+      <code class="output">30</code>
+    </li>
+    <li>
+      <code class="input">const printHello = () => { 
+        <br>console.log('Hello, stranger!'); 
+        <br>}; 
+        <br>printHello();
+      </code><br><span>&#8658;</span>
+      <code class="output">Hello, stranger!</code>
+    </li>
+    <li>
+      <code class="input">const printMsg = () => { 
+        <br>var numOne = 2;
+        <br>var numTwo = 4;
+        <br>console.log(numOne + numTwo); 
+        <br>}; 
+        <br>printMsg();
+      </code><br><span>&#8658;</span>
+      <code class="output">6</code>
+    </li>
+    <li>
+      <code class="input">const printMsg = () => { 
+        <br>var numOne = 13;
+        <br>var numTwo = 2;
+        <br>console.log("the remainder is " + (numOne % numTwo)); 
+        <br>}; 
+        <br>printMsg();
+      </code><br><span>&#8658;</span>
+      <code class="output">the remainder is 1</code>
+    </li>
+    <li>
+      <code class="input">var assignmentStatus = "done"; 
+        <br>var msg = "I am "
+        <br>console.log( msg + assignmentStatus);
+      </code><br><span>&#8658;</span>
+      <code class="output">I am done</code>
+    </li>
+  </ol>
 
 </main>
 <div data-include-html="footer.html"></div>

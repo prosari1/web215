@@ -97,14 +97,12 @@ a:visited {
   color: #50514F;
   text-decoration: none;
   padding-bottom: 1px;
-  /* create smooth transition on mouse hovering */
-  transition: background-color 0.5s, border-bottom 0.5s;
 }
 
 a:hover,
 a:active {
   color: #50514F;
-  background-color: rgb(230, 126, 34, 0.3);
+  /* background-color: rgb(230, 126, 34, 0.3); */
   border-bottom: 2px solid rgb(230, 126, 34);
   padding: 3px;
   border-radius: 3px;
@@ -113,7 +111,6 @@ a:active {
 .content a:link {
   border-bottom: 2px solid #50514F;
   background-color: rgba(243, 153, 74, 0.342);
-  padding: 2px;
   transition: background-color 0.5s, border-bottom 0.5s;
 }
 
