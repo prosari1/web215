@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Script to include html header and footer dinamically  -->
+    
+    <script src="scripts/include.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/Grid.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <title>WEB 215 | MongoDB Page</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/coffee-logo.png">
+
+  </head>
+  <body>
+    <div data-include-html="header.html"></div>
+    <main>
+      <div class="row content">
+        <h1>MongoDB</h1>
+        <p>I've created a database collection demo.WEB215 where I stored the data inserted from my Javascript. Also, to verify that the data was inserted there's a console.log to confirm that the process went smooth.</p>
+        <img src="images/mongodb-js.png" alt="MongoDB Javascript">
+        <img src="images/mongodb-compass.png" alt="MongoDB Compass">
+      </div>
+    </main>
+    <div data-include-html="footer.html"></div>
+    <script>
+      includeHTML();
+    </script>  
+  </body>
+</html>
+
