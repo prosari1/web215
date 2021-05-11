@@ -1,0 +1,19 @@
+{
+  "sample": true,
+  "name": "color list",
+  "description": "A list of Kawa Shop colors",
+  "colorList": [
+    {
+      "color": "background",
+      "hex": "#22c1c3"
+    },
+    {
+      "color": "font",
+      "hex": "#474747"
+    },
+    {
+      "color": "orange",
+      "hex": "#e67e22"
+    }
+  ]
+}
