@@ -204,3 +204,78 @@ span {
   width: 49px;
 	height: 49px;
 }
+
+/* CRUD FORM STYLES */
+table {
+  width: 100%;
+}
+table.list{
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+}
+
+tr:nth-child(even),table.list thead>tr {
+  background-color: #dddddd;
+}
+
+input[type=text], input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit]{
+  width: 30%;
+  background-color: #ddd;
+  color: #000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button {
+  width: 30%;
+  background-color: #ddd;
+  color: #000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-delete {
+  background-color: rgb(244, 139, 139);
+  color: white;
+}
+
+.person-name {
+  color: black;
+  padding-right: 5px;
+}
+
+.button-edit {
+  background-color: rgb(153, 189, 153);
+  color: white;
+}
+
+form div.form-action-buttons{
+  text-align: right;
+}
+
+tr:nth-child(even),table.list thead>tr {
+  background-color: #dddddd;
+}
+
+

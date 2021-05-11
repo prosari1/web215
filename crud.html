@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Script to include html header and footer dinamically  -->
+    
+    <script src="scripts/include.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/Grid.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <title>WEB 215 | CRUD Form</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/coffee-logo.png">
+
+  </head>
+  <body>
+    <div data-include-html="header.html"></div>
+    <main>
+      <div class="row content">
+        <h1>Form</h1>
+        <table>
+          <tr>
+            <td>
+              <form onsubmit="event.preventDefault(); onFormSubmit();" style="width:98%;">
+                <div>
+                  <label>Full Name</label>
+                  <input type="text" id="fullName" name="fullName">
+                </div>
+                <div class="form-action-buttons">
+                  <input type="submit" class="button" value="Submit">
+                </div>
+              </form>
+            </td>
+            <td style="vertical-align: top;">
+              Guest Names:
+              <div id="guest-entries-container"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <div data-include-html="footer.html"></div>
+    <script>
+      includeHTML();
+      function onFormSubmit() {
+        var nameValue = document.getElementById("fullName").value;
+        fetch('http://localhost:3000/add-guest/', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({name : nameValue})
+        }).then(function(response) {
+          return response.json();
+        }).finally(function() {
+          window.location.reload();
+        });
+      }
+    </script>
+
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="scripts/crud.js"></script>
+
+  <!-- Load our React component. -->
+  <script src="scripts/guestbook.js"></script>
+  </body>
+</html>
+
